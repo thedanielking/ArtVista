@@ -1,0 +1,249 @@
+:root{
+    --clr-primary-100: hsl(100, 100%, 100%);
+
+    --clr-secondary-100: hsla(252, 100%, 58%, 1);
+    --clr-secondary-200: hsla(252, 100%, 87%, 1);
+
+
+
+    --clr-neutral-100: hsla(240, 45%, 98%, 1);
+    --clr-neutral-200: #e6e0ff;
+
+
+    --clr-dark-100: hsla(218, 23%, 23%, 1);
+    --clr-dark-200: rgb(174, 178, 185);
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    
+    --ff-accent: inter, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-family: var(--ff-accent);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3{
+    line-height: 1;
+}
+
+
+/* general styles */
+body{
+    font-size: 14px;
+    
+}
+
+
+
+/* logo styles */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    font-weight: var(--fw-bold); 
+}
+
+/* main styles */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 7rem;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%; */
+    
+}
+
+/* .container{
+    width: 40%;
+} */
+
+
+.signInContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.signInContainer h1{
+    font-weight: var(--fw-bold);
+}
+
+.signInContainer p{
+    color: var(--clr-dark-200);
+    font-weight: var(--fw-regular);
+}
+
+.signInContainer form .inputDiv{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--clr-neutral-200);
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.signInContainer form .inputDiv input{
+    border: none;
+    width: 100%;
+    color: var(--clr-dark-200);
+}
+
+.signInContainer form .inputDiv img{
+   filter: invert(100%);
+}
+
+.signInContainer form .inputDiv input:focus{
+    outline: none;
+}
+
+.signInContainer form .checkDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.signInContainer form .checkDiv div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.signInContainer form .checkDiv p{
+    color: var(--clr-secondary-100);
+    font-weight: var(--fw-regular);
+}
+
+.signInContainer form button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 7px;
+    background: var(--clr-secondary-100);
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+
+.signInContainer form #googleBtn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--clr-primary-100);
+    border: 1px solid var(--clr-neutral-200);
+    color: var(--clr-dark-100);
+    
+}
+
+.signInContainer form .signUp{
+    text-align: center;
+    margin-top: 5px;
+    color: var(--clr-dark-100);
+}
+
+.signInContainer form .signUp span{
+    color: var(--clr-secondary-100);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.imageContainer{
+    width: 35%;
+    /* height: 500px; */
+    background-color: var(--clr-neutral-100);
+    border-radius: 15px;
+    /* background: url(./images/Library=DRIP_20.png), var(--clr-neutral-100);
+    background-size: cover;
+    background-blend-mode: multiply; */
+
+}
+
+.imageContainer img{
+    width: 100%;
+}
+
+
+@media (max-width: 700px){
+    main{
+        flex-direction: column;
+    }
+
+    .logo{
+        flex-direction: column;
+       justify-content: center;
+       margin-top: 20px;
+    }
+
+    .signInContainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: -50%;
+    }
+
+    .imageContainer{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
